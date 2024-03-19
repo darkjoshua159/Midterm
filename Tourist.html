@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOURIST</title>
+  
+  <!-- Link Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Link FontAwesome CSS for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Your custom CSS -->
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Lucida Sans", sans-serif;
+      background-color: #CBAD87;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000000;
+      padding-top: 15px;
+      text-align:left;
+    }
+
+    .menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu li {
+      padding: 8px;
+      margin-bottom: 7px;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .menu li:hover a {
+      color: #010A2B;
+      background-color: #CBAD87;
+    }
+
+    .content1{
+        position: fixed;
+        margin: 20px;
+        padding: 120px;
+        padding-top: 50px;
+        padding-left: 250px;
+        width: 90vh;
+        height: 50vh;
+    }
+
+    .content1 input[type="text"] {
+      background-color: #f8f9fa;
+      color: #000000; 
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      border-radius: 50px;
+    }
+
+    .content1 input[type="text"]::placeholder {
+    color: #000000; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .content {
+      display: inline;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #CBAD87;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .content3 {
+      margin-top: 5%;
+      padding: 20px;
+      padding-left: 0px;
+      background-color: #CBAD87;
+    }
+
+    .img-1 {
+      border-radius: 10%;
+    }
+    .im {
+        border-radius: 100px;
+        padding-left: 20%;   
+    }
+
+    .pagination {
+        padding-left: 750px;
+    }
+
+    .pagination .page-link { 
+        color: #000000;
+        border: none;
+        border-radius: 0px;
+        background-color: #CBAD87;
+        padding-top: 50px;
+    }
+
+    .pagination .page-link:hover {
+    text-decoration: none;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .sidebar {
+        width: 80px;
+      }
+
+      .content1 {
+        width: calc(100% - 80px);
+        margin-left: 80px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+    <img class="im" src="1.jpg" width="80px">
+    <div class="menu">
+        <br><br><br><br><br><br>
+        <ul>
+            <li><a href="Home.html"><i class="fas fa-home"></i>HOME</a></li>
+            <li><a href="Tourist.html"><i class="fas fa-map-marker-alt"></i>TOURIST</a></li>
+            <li><a href="News.html"><i class="fa fa-newspaper"></i>NEWS</a></li>
+            <li><a href="Faq.html"><i class="fas fa-question-circle"></i>FAQ</a></li>
+            <li><a href="About.html"><i class="fas fa-info-circle"></i>ABOUT</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Your content goes here -->
+
+<div class="content1">
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fas fa-search"></i></span>
+        </div>
+        <input type="text" class="form-control" placeholder="search">
+    </div>
+
+    <div class = "content">
+      <br><br><br><br>
+      <h1>Pink Beach</h1>
+      <br>
+      <p>This pink sand beach of Santa Cruz Island dubbed aptly as one of the best beaches in the world. The beach is covered in pink sand because of the crushed red organ pipe coral that washes ashore.</p>
+  </div>
+  
+    <div class="content3">
+      <!-- Content goes here -->
+      <img class="img-1" src="1.png" width="1500px">
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+
+                <a class="page-link" href="Tourist-5.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+            <li class="page-item"><a class="page-link" href="Tourist.html"><i class="fa fa-eye" aria-hidden="true"></i></a></li>
+            <li class="page-item"><a class="page-link" href="Tourist-2.html"><i class="fa fa-circle" aria-hidden="true"></i></a></li>
+            <li class="page-item"><a class="page-link" href="Tourist-3.html"><i class="fa fa-circle" aria-hidden="true"></i></a></li>
+            <li class="page-item"><a class="page-link" href="Tourist-4.html"><i class="fa fa-circle" aria-hidden="true"></i></a></li>
+            <li class="page-item"><a class="page-link" href="Tourist-5.html"><i class="fa fa-circle" aria-hidden="true"></i></a></li>
+            <li class="page-item">
+                <a class="page-link" href="Tourist-2.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Link Bootstrap JS at the bottom of the body (optional if you require Bootstrap JavaScript features) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your custom JavaScript (if any) -->
+<script>
+  // Add any custom JavaScript here
+</script>
+
+</body>
+</html>
