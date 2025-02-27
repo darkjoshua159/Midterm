@@ -25,17 +25,19 @@ body {
 }
 
 /* Sidebar */
+/* Sidebar - Consistent Across All Pages */
 .sidebar {
     height: 100%;
-    width: 150px; /* Increased width for better spacing */
+    width: 100px; /* Adjusted to match all pages */
     position: fixed;
     top: 0;
     left: 0;
     background-color: #000000;
     padding-top: 15px;
-    text-align: left;
+    text-align: center; /* Centers the menu items */
 }
 
+/* Sidebar Menu */
 .sidebar .menu ul {
     list-style-type: none;
     padding: 0;
@@ -45,8 +47,6 @@ body {
 .sidebar .menu li {
     padding: 10px;
     margin-bottom: 7px;
-    color: #ffffff;
-    text-align: center;
     transition: 0.3s ease;
 }
 
@@ -56,6 +56,8 @@ body {
     display: block;
     padding: 10px;
     border-radius: 5px;
+    font-size: 14px; /* Ensure text fits properly */
+    text-align: center;
 }
 
 .sidebar .menu li:hover {
@@ -65,17 +67,17 @@ body {
 .sidebar .menu li:hover a {
     color: #010A2B;
 }
-}
 
-/* Logo Image */
+/* Sidebar Logo - Fixed Size */
 .im {
-    width: 80px; /* Match the size used on other pages */
-    height: 80px; /* Maintain aspect ratio */
+    width: 80px; /* Ensures consistency across all pages */
+    height: 80px; 
     border-radius: 50%;
     display: block;
-    margin: 10px auto; /* Center inside sidebar */
-    object-fit: cover; /* Ensures image fills without distortion */
+    margin: 10px auto; /* Centering inside sidebar */
+    object-fit: cover; /* Ensures proper scaling */
 }
+
 /* Content Layout */
 .content1 {
     margin-left: 110px; /* Adjusted for sidebar width */
@@ -83,47 +85,14 @@ body {
     max-width: calc(100% - 110px);
 }
 
-/* Search Bar */
-.content1 .input-group {
-    max-width: 400px;
-    margin-bottom: 20px;
-}
-
-.content1 input[type="text"] {
-    background-color: #f8f9fa;
-    color: #000000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-radius: 50px;
-    padding: 10px;
-}
-
-/* Placeholder Text */
-.content1 input[type="text"]::placeholder {
-    color: #000000;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-/* Image Styling */
-.img-1 {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    display: block;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .sidebar {
-        width: 80px;
+        width: 80px; /* Smaller sidebar for mobile */
     }
 
     .content1 {
-        margin-left: 90px; /* Adjust content to fit smaller sidebar */
-        padding: 20px;
-    }
-
-    .sidebar .menu li {
-        padding: 5px;
+        margin-left: 90px;
     }
 
     .sidebar .menu li a {
@@ -131,6 +100,7 @@ body {
         padding: 5px;
     }
 }
+
 
 
   </style>
