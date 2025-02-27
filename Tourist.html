@@ -34,29 +34,39 @@ body {
   text-align: left;
   transition: 0.3s ease-in-out;
 }
-
 .menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
+        .menu ul li {
+            margin: 20px 0;
+        }
 
-.menu li a {
-  text-decoration: none;
-  color: #ffffff;
-}
+        .menu ul li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+            background: #444;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            transition: 0.3s ease;
+        }
 
-.menu li:hover a {
-  color: #010A2B;
-  background-color: #CBAD87;
-}
+        .menu ul li a:hover {
+            background: #555;
+            transform: scale(1.1);
+        }
+
+        .menu ul li a:active {
+            background: #666;
+            transform: scale(0.95);
+        }
 
 .content1 {
   position: relative; /* Changed from fixed to relative */
