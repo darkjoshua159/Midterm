@@ -5,113 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HOME</title>
   
-  <!-- Link Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Link FontAwesome CSS for icons -->
+  <!-- FontAwesome CSS for icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
-  <!-- Your custom CSS -->
   <style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-    font-family: "Lucida Sans", sans-serif;
-    background-color: #CBAD87;
-}
+    body {
+        font-family: "Lucida Sans", sans-serif;
+        background-color: #CBAD87;
+    }
 
-/* Sidebar */
-/* Sidebar - Consistent Across All Pages */
-.sidebar {
-    height: 100%;
-    width: 100px; /* Adjusted to match all pages */
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #000000;
-    padding-top: 15px;
-    text-align: center; /* Centers the menu items */
-}
-
-/* Sidebar Menu */
-.sidebar .menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar .menu li {
-    padding: 10px;
-    margin-bottom: 7px;
-    transition: 0.3s ease;
-}
-
-.sidebar .menu li a {
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px; /* Ensure text fits properly */
-    text-align: center;
-}
-
-.sidebar .menu li:hover {
-    background-color: #CBAD87;
-}
-
-.sidebar .menu li:hover a {
-    color: #010A2B;
-}
-
-/* Sidebar Logo - Fixed Size */
-.im {
-    width: 80px; /* Ensures consistency across all pages */
-    height: 80px; 
-    border-radius: 50%;
-    display: block;
-    margin: 10px auto; /* Centering inside sidebar */
-    object-fit: cover; /* Ensures proper scaling */
-}
-
-/* Content Layout */
-.content1 {
-    margin-left: 110px; /* Adjusted for sidebar width */
-    padding: 20px;
-    max-width: calc(100% - 110px);
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
+    /* Sidebar */
     .sidebar {
-        width: 80px; /* Smaller sidebar for mobile */
+        height: 100%;
+        width: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
     }
 
+    /* Logo */
+    .im {
+        width: 90px; /* Adjusted size */
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Sidebar Menu */
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 40px 0 0 0; /* Adds spacing below the logo */
+    }
+
+    .menu li {
+        margin: 20px 0;
+    }
+
+    .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background: #444;
+        color: white;
+        font-size: 24px;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        background: #CBAD87;
+        color: #010A2B;
+        transform: scale(1.1);
+    }
+
+    /* Content Layout */
     .content1 {
-        margin-left: 90px;
+        margin-left: 110px;
+        padding: 20px;
+        max-width: calc(100% - 110px);
     }
 
-    .sidebar .menu li a {
-        font-size: 12px;
-        padding: 5px;
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .sidebar {
+            width: 80px;
+        }
+
+        .content1 {
+            margin-left: 90px;
+        }
     }
-}
-
-
-
   </style>
 </head>
 <body>
 
-
 <div class="sidebar">
-    <img class="im" src="1.jpg" width="80px">
+    <img class="im" src="1.jpg">
     <div class="menu">
-        <br><br><br><br><br><br>
         <ul>
             <li><a href="Home.html"><i class="fas fa-home"></i></a></li>
             <li><a href="Tourist.html"><i class="fas fa-map-marker-alt"></i></a></li>
@@ -122,8 +110,7 @@ body {
     </div>
 </div>
 
-<!-- Your content goes here -->
-
+<!-- Content Area -->
 <div class="content1">
     <div class="input-group">
         <div class="input-group-prepend">
@@ -131,22 +118,16 @@ body {
         </div>
         <input type="text" class="form-control" placeholder="search">
     </div>
-  
+
     <div class="content">
-      <!-- Content goes here -->
-      <img class="img-1" src="2.jpg">
+        <img class="img-1" src="2.jpg">
     </div>
 </div>
 
-<!-- Link Bootstrap JS at the bottom of the body (optional if you require Bootstrap JavaScript features) -->
+<!-- Bootstrap JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- Your custom JavaScript (if any) -->
-<script>
-  // Add any custom JavaScript here
-</script>
 
 </body>
 </html>
