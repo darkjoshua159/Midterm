@@ -20,20 +20,60 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lucida Sans", sans-serif;
-  background-color: #CBAD87;
+  background-color: #CBAD87;a
 }
 
-.sidebar {
-  height: 100%;
-  width: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  padding-top: 15px;
-  text-align: left;
-  transition: 0.3s ease-in-out;
-}
+   .sidebar {
+      height: 100vh;
+      width: 100px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Logo */
+    .im {
+        width: 90px; /* Adjusted size */
+        height: 90px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    /* Sidebar Menu */
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 40px 0 0 0; /* Adds spacing below the logo */
+    }
+
+    .menu li {
+        margin: 20px 0;
+    }
+
+    .menu li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background: #444;
+        color: white;
+        font-size: 24px;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        background: #CBAD87;
+        color: #010A2B;
+        transform: scale(1.1);
+    }
+
 
 .content1 {
   position: relative; /* Changed from fixed to relative */
