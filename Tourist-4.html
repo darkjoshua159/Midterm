@@ -17,113 +17,132 @@
       box-sizing: border-box;
     }
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Lucida Sans", sans-serif;
-      background-color: #CBAD87;
-    }
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", sans-serif;
+  background-color: #CBAD87;
+}
 
-    .sidebar {
-      height: 100%;
-      width: 100px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #000000;
-      padding-top: 15px;
-      text-align:left;
-    }
+.sidebar {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  padding-top: 15px;
+  text-align: left;
+  transition: 0.3s ease-in-out;
+}
 
-    .menu ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-    .menu li {
-      padding: 8px;
-      margin-bottom: 7px;
-      color: #ffffff;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    }
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
 
-    .menu li a {
-      text-decoration: none;
-      color: #ffffff;
-    }
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+}
 
-    .menu li:hover a {
-      color: #010A2B;
-      background-color: #CBAD87;
-    }
+.menu li:hover a {
+  color: #010A2B;
+  background-color: #CBAD87;
+}
 
-    .content1{
-        position: fixed;
-        margin: 20px;
-        padding: 120px;
-        padding-top: 50px;
-        padding-left: 250px;
-        width: 90vh;
-        height: 50vh;
-    }
+.content1 {
+  position: relative; /* Changed from fixed to relative */
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 50px;
+  width: 90%;
+  max-width: 1200px; /* Set a max-width to prevent stretching */
+  text-align: center;
+}
 
-    .content1 input[type="text"] {
-      background-color: #f8f9fa;
-      color: #000000; 
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      border-radius: 50px;
-    }
+.content1 input[type="text"] {
+  background-color: #f8f9fa;
+  color: #000000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 50px;
+  width: 100%; /* Make input responsive */
+}
 
-    .content1 input[type="text"]::placeholder {
-    color: #000000; 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+.content1 input[type="text"]::placeholder {
+  color: #000000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
 
-    .content {
-      display: inline;
-      justify-content: space-around;
-      padding: 20px;
-      background-color: #CBAD87;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+.content {
+  display: flex; /* Changed from inline to flex */
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #CBAD87;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
 
-    .content3 {
-      margin-top: 3%;
-      padding: 20px;
-      padding-left: 0px;
-      background-color: #CBAD87;
-    }
+.content3 {
+  margin-top: 5%;
+  padding: 20px;
+  text-align: center;
+  background-color: #CBAD87;
+}
 
-    .img-1 {
-      border-radius: 10%;
-    }
-    .im {
-        border-radius: 100px;
-        padding-left: 20%;
-    }
+.img-1 {
+  border-radius: 10%;
+  max-width: 100%;
+  height: auto;
+}
 
-    .pagination {
-        padding-left: 750px;
-    }
+.im {
+  border-radius: 100px;
+  padding-left: 20%;
+}
 
-    .pagination .page-link { 
-        color: #000000;
-        border: none;
-        border-radius: 0px;
-        background-color: #CBAD87;
-        padding-top: 30px;
-    }
+.pagination {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+}
 
-    .pagination .page-link:hover {
-    text-decoration: none;
-    }
+.pagination .page-link {
+  color: #000000;
+  border: none;
+  border-radius: 0px;
+  background-color: #CBAD87;
+}
 
-    @media screen and (max-width: 768px) {
-      .sidebar {
-        width: 80px;
-      }
-    }
+.pagination .page-link:hover {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 80px;
+  }
+
+  .content1 {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
 
   </style>
 </head>
